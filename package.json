@@ -1,0 +1,15 @@
+{
+  "name": "automacao-ml",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "coletar": "npx cypress run",
+    "gerar": "node scripts/gerarPostagem.js",
+    "rodar-tudo": "npm run coletar && npm run gerar",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

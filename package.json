@@ -4,12 +4,15 @@
   "main": "index.js",
   "scripts": {
     "coletar": "npx cypress run",
-    "gerar": "node scripts/gerarPostagem.js",
-    "rodar-tudo": "npm run coletar && npm run gerar",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "gerarTexto": "node scripts/gerarPostagem.js",
+    "gerarImagens": "node scripts/gerarImagensPorProduto.js",
+    "rodar-tudo": "npm run coletar && npm run gerarTexto && npm run gerarImagens"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "puppeteer": "^24.10.0"
+  }
 }
